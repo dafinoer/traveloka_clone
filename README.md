@@ -7,7 +7,6 @@ Repository codebase for simple project.
 - [Fluro]
 - [Dio]
 - [Flutter-BLoC]
--
 
 ## Getting Started
 
