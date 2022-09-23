@@ -49,6 +49,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
       body: ChangeNotifierProvider.value(
         value: swipeControl,
@@ -66,7 +67,10 @@ class _OnBoardPageState extends State<OnBoardPage> {
                         'Explore Activities near you with experience, and try out our rental and bus services',
                     asset: AspectRatio(
                         aspectRatio: 1 / 1,
-                        child: Assets.images.campingOnboard.svg()),
+                        child: Padding(
+                          padding: const EdgeInsets.all(24.0),
+                          child: Assets.images.campingOnboard.svg(),
+                        )),
                   ),
                   BoardView(
                     title: 'Picked with helpful feature',
@@ -74,7 +78,10 @@ class _OnBoardPageState extends State<OnBoardPage> {
                         'Online check-in and easy reschedule let you travel with ease',
                     asset: AspectRatio(
                       aspectRatio: 1 / 1,
-                      child: Assets.images.travelOnboard.svg(),
+                      child: Padding(
+                        padding: const EdgeInsets.all(24.0),
+                        child: Assets.images.travelOnboard.svg(),
+                      ),
                     ),
                   ),
                   BoardView(
@@ -82,7 +89,10 @@ class _OnBoardPageState extends State<OnBoardPage> {
                       subTitle: 'Enable push notification to get booking',
                       asset: AspectRatio(
                         aspectRatio: 1 / 1,
-                        child: Assets.images.deviceOnboard.svg(),
+                        child: Padding(
+                          padding: const EdgeInsets.all(24.0),
+                          child: Assets.images.deviceOnboard.svg(),
+                        ),
                       ),
                       bottom: Expanded(
                         child: Align(
@@ -111,7 +121,10 @@ class _OnBoardPageState extends State<OnBoardPage> {
                     subTitle: 'Member can enjoy exclusive discount and redeem',
                     asset: AspectRatio(
                         aspectRatio: 1 / 1,
-                        child: Assets.images.loginAsset.svg()),
+                        child: Padding(
+                          padding: const EdgeInsets.all(24.0),
+                          child: Assets.images.loginAsset.svg(),
+                        )),
                     bottom: Expanded(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.end,
